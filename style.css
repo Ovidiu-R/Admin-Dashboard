@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3.75fr;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 5fr;
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.navTop, .navBottom {
+    display: grid;
+    border: 1px solid black;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1.5fr 4.4fr;
+    border: 1px solid black;
+    background-color: rgb(156, 156, 196);
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2.6fr 1fr;
+}
+
+.projects {
+    display: grid;
+    /* grid: 1fr 1fr 1fr / 1fr 1fr; */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+}
+
+.rightSide {
+    display: grid;
+    grid-template-rows: 2fr;
+    border: 1px solid black;
+}
