@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    /* border: 1px black solid; */
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     display: grid;
     grid-template-rows: 0.7fr 4.5fr 2.5fr 6fr;
     gap: 40px;
-    background-color: rgb(76, 133, 231);
+    background-color: #f87171;
     padding-left: 20px;
     padding-top: 15px;
 }
@@ -29,7 +30,6 @@ body {
     grid-template-columns: 40px 150px;
     justify-items: start;
     gap: ;
-    /* align-self: center; */
 }
 
 .dashboardHeader>p{
@@ -60,13 +60,15 @@ li>p {
     display: grid;
     grid-template-rows: 70px 70px;
     background-color: white;
-    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0px 4px 2px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .headerTop {
     display: grid;
     grid-template-columns: 1fr 270px;
     padding-top: 20px;
+    padding-right: 15px;
 }
 
 .topLeft {
@@ -79,6 +81,7 @@ li>p {
     display: grid;
     grid-template-columns: 20px 80px 120px;
     align-items: center;
+    margin-right: 10px;
 }
 
 .topRight>p {
@@ -90,8 +93,6 @@ li>p {
     display: grid;
     grid-template-columns: 1fr 380px;
     justify-content: space-between;
-    /* padding-top: 10px; */
-    /* margin-bottom: 20px; */
 }
 
 .bottomLeft {
@@ -114,6 +115,11 @@ li>p {
 .avatar {
     height: 50px;
     align-self: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 1px rgb(241, 1, 1);
+    margin-left: 30px;
+    padding: 2px;
+    background-color: red;
 }
 
 input {
@@ -129,19 +135,23 @@ input {
 button {
     height: 30px;
     width: 85px;
+    border: 1px solid black;
     border-radius: 15px;
     font-size: 16px;
     margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 button:hover {
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: rgba(160, 10, 65, 0.25) 0px 30px 60px -12px inset,
+    rgba(166, 51, 51, 0.509) 0px 18px 36px -18px inset;
 }
 
 .content {
     display: grid;
     grid-template-columns: 2.6fr 1fr;
     background-color: rgb(231, 240, 240);
+    padding-bottom: 100px;
 }
 
 .projects> h3{
@@ -163,6 +173,16 @@ button:hover {
     padding: 25px;
     background-color: white;
     border-radius: 8px;
+    border-left: 5px solid orangered;
+}
+
+.trending>div {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trendingItem {
+    border: 1px black solid;
 }
 
 .logos {
@@ -186,4 +206,12 @@ button:hover {
 
 ul, li {
     list-style-type: none;;
+}
+
+.trending img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 25px;
+
 }
